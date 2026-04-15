@@ -1,148 +1,198 @@
 # 🛡️ SentinelOS
-
-> A custom Debian-based cybersecurity operating system focused on simplicity, performance, and real-world offensive & defensive security workflows.
-
----
-
-## 🚀 Overview
-
-SentinelOS is a lightweight, security-focused Linux distribution built on **Debian 12 (Bookworm)**. It is designed for cybersecurity enthusiasts, students, and professionals who want a clean, efficient, and customizable environment without the bloat of traditional pentesting distributions.
-
-Unlike other security OS options, SentinelOS prioritizes:
-
-- ⚡ Performance and minimal resource usage
-- 🧩 Modular tool installation
-- 🔒 Security-first configurations
-- 🧠 Learning-oriented environment
+> Sistema operativo de ciberseguridad basado en Debian 12, diseñado para entornos académicos, laboratorios y pruebas de penetración.
 
 ---
 
-## 🎯 Purpose
+## 🚀 Descripción General
 
-The goal of SentinelOS is to provide a **controlled and optimized environment** for:
+SentinelOS es una distribución Linux orientada a la seguridad, construida sobre **Debian 12 (Bookworm)**. Fue desarrollada como proyecto final del curso **CY-301 Sistemas Operativos Intermedios** de la Universidad Fidelitas, por el Grupo No. 1.
 
-- Penetration Testing
-- Threat Hunting
-- Network Analysis
-- Cybersecurity Learning Labs
-- Custom Security Tool Development
+El sistema incluye un entorno gráfico **GNOME** completamente personalizado, más de **40 herramientas de ciberseguridad** preinstaladas, y un proceso de instalación guiado mediante el instalador gráfico **Calamares**.
 
 ---
 
-## 🧰 Core Features
+## 🎯 Propósito
 
-- 🐧 Based on Debian 12 (stable & reliable)
-- 🪶 Lightweight ISO (optimized squashfs)
-- ⚙️ Minimal default installation (no unnecessary bloat)
-- 🔐 Security-focused configurations
-- 🖥️ Custom boot & system tuning
-- 🧱 Designed for scalability (post-install tool deployment)
+SentinelOS está diseñado para:
 
----
-
-## 🧪 Included / Supported Tools
-
-SentinelOS follows a **modular approach**, meaning tools can be installed as needed.
-
-### 🔍 Reconnaissance
-- Nmap
-- Masscan
-- theHarvester
-- DNSRecon
-- Whois
-
-### 💥 Exploitation
-- Metasploit Framework
-- Searchsploit
-- SQLMap
-- Commix
-- BeEF (optional/manual)
-
-### 🔑 Password Attacks
-- John the Ripper
-- Hashcat
-- Hydra
-- Crunch
-- CeWL
-
-### 📡 Wireless Security
-- Aircrack-ng
-- Wifite
-- Reaver
-- Bully
-
-### 🕵️ Sniffing & Spoofing
-- Wireshark
-- tcpdump
+- 🔍 Pruebas de penetración (Pentesting)
+- 🌐 Análisis de tráfico de red
+- 🔐 Análisis forense digital
+- 🧠 Aprendizaje práctico en ciberseguridad
+- 🛡️ Desarrollo y práctica de mecanismos de defensa
 
 ---
 
-## 🧠 Design Philosophy
+## 🧰 Características Principales
 
-SentinelOS is built on three core principles:
-
-1. **Minimalism** → Install only what you need  
-2. **Control** → You decide your environment  
-3. **Performance** → No unnecessary background overhead  
-
----
-
-## 📦 Installation
-
-### Option 1: Virtual Machine (Recommended)
-- Platform: VirtualBox / VMware
-- Import ISO
-- Boot in Live Mode or Install
-
-### Option 2: Bare Metal
-⚠️ Use with caution. This is a custom OS.
+- 🐧 **Base:** Debian 12 (Bookworm) — kernel 6.1.0-44-amd64
+- 🖥️ **Entorno gráfico:** GNOME 43 con tema Orchis-Grey-Dark e iconos Tela-dark
+- 💿 **Instalador:** Calamares con branding personalizado de SentinelOS
+- 🪶 **ISO optimizada** mediante compresión squashfs (xz)
+- 🔒 **Seguridad integrada:** UFW, Fail2ban, política de contraseñas PAM
+- ⚙️ **Instalación modular:** herramientas pesadas se instalan automáticamente en el primer arranque
+- 🌐 **Detección automática de zona horaria** por IP al arrancar
+- 🧅 **Tor Browser** preinstalado para navegación anónima
+- 📦 **Compatible con VirtualBox 7.x y VMware Workstation/Player**
 
 ---
 
-## ⚠️ Disclaimer
+## 🧪 Herramientas Incluidas
 
-SentinelOS is intended for **educational and ethical use only**.
+SentinelOS utiliza un enfoque **modular**: las herramientas ligeras están preinstaladas en el ISO, y las herramientas pesadas se instalan automáticamente en el primer arranque del sistema instalado.
 
-The creator is not responsible for misuse or illegal activities.
+### 🔍 Reconocimiento y OSINT
+| Herramienta | Descripción |
+|---|---|
+| Nmap | Escáner de puertos y servicios de red |
+| Masscan | Escáner masivo de puertos |
+| theHarvester | Recolección de información OSINT |
+| Recon-ng | Framework modular de reconocimiento web |
+| DNSRecon / DNSenum | Enumeración y análisis DNS |
+| Nikto | Escáner de vulnerabilidades web |
+| Whois | Información de registro de dominios |
+
+### 💥 Explotación
+| Herramienta | Descripción |
+|---|---|
+| Metasploit Framework | Framework completo de pruebas de penetración |
+| SQLMap | Detección y explotación de inyecciones SQL |
+| Commix | Inyección de comandos en aplicaciones web |
+| SearchSploit | Base de datos local de exploits (Exploit-DB) |
+
+### 🔑 Ataques de Contraseñas
+| Herramienta | Descripción |
+|---|---|
+| John the Ripper | Crackeo de hashes de contraseñas |
+| Hashcat | Crackeo de contraseñas con GPU |
+| Hydra | Fuerza bruta de servicios de red |
+| Medusa | Fuerza bruta paralela |
+| CeWL / Crunch | Generadores de wordlists personalizados |
+
+### 📡 Seguridad Inalámbrica
+| Herramienta | Descripción |
+|---|---|
+| Aircrack-ng | Suite completa de auditoría WiFi |
+| Wifite | Auditoría WiFi automatizada |
+| Reaver / Bully | Ataques WPS |
+
+### 🕵️ Análisis de Red
+| Herramienta | Descripción |
+|---|---|
+| Wireshark | Analizador gráfico de tráfico de red |
+| tcpdump | Captura de paquetes desde terminal |
+| Ettercap | Ataques Man-in-the-Middle |
+| Bettercap | Framework de ataques de red |
+| Mitmproxy | Proxy para análisis de tráfico HTTPS |
+
+### 🌐 Seguridad Web
+| Herramienta | Descripción |
+|---|---|
+| Burp Suite Community | Proxy para pruebas de seguridad web |
+| OWASP ZAP | Escáner de vulnerabilidades web |
+| Gobuster | Fuerza bruta de directorios web |
+| WhatWeb | Fingerprinting de aplicaciones web |
+| WFuzz / Dirb | Fuzzing y enumeración web |
+
+### 🔬 Análisis Forense
+| Herramienta | Descripción |
+|---|---|
+| Autopsy | Plataforma gráfica de análisis forense |
+| Volatility3 | Análisis de volcados de memoria RAM |
+| Binwalk | Análisis y extracción de firmware |
+| Steghide | Esteganografía en imágenes |
+| ExifTool | Análisis de metadatos de archivos |
+
+### ⚙️ Ingeniería Inversa
+| Herramienta | Descripción |
+|---|---|
+| Ghidra | Framework de ingeniería inversa (NSA) |
+| GDB | Depurador de binarios |
+| Radare2 | Análisis y desensamblado de binarios |
 
 ---
 
-## 🛠️ Development Status
+## 🔒 Mecanismos de Seguridad
 
-🚧 Active Development
-
-Known issues:
-- Display manager inconsistencies in some environments
-- Live boot graphical issues (work in progress)
-
----
-
-## 🤝 Contributions
-
-This project is currently personal, but contributions and suggestions are welcome in the future.
+| Mecanismo | Descripción |
+|---|---|
+| UFW | Firewall — deny incoming, allow outgoing por defecto |
+| Fail2ban | Bloqueo automático de IPs con intentos fallidos SSH |
+| PAM pwquality | Política de contraseñas: mín. 12 chars, mayús, minús, números y símbolos |
+| Faillock | Bloqueo de cuentas tras 10 intentos fallidos |
+| Permisos de archivos | Sistema de permisos Unix estándar |
 
 ---
 
+## 💿 Instalación
 
+### Opción 1: Modo Live (sin instalación)
+1. Cargar `SentinelOS-1.0-amd64.iso` en VirtualBox o VMware
+2. Arrancar la VM — el sistema inicia automáticamente en modo live
+3. El instalador Calamares se abre automáticamente para instalar en disco
 
-## 👨‍💻 Author
+### Opción 2: Instalación completa con Calamares
+1. Arrancar desde el ISO en modo live
+2. Seguir el asistente de instalación Calamares
+3. Crear usuario y configurar el sistema
+4. Reiniciar — el sistema arranca desde el disco instalado
+5. En el primer arranque se instalan automáticamente las herramientas pesadas
 
-**Daniela Álvarez Murillo** | **Jathzael Saavedra Ugalde**
-*Mauricio Trejos Gómez** | **Saulo Jimenez Aguiluz**
+### Requisitos mínimos
+| Componente | Mínimo | Recomendado |
+|---|---|---|
+| RAM | 4 GB | 6 GB |
+| Disco | 20 GB | 40 GB |
+| CPU | 2 núcleos 64-bit | 4 núcleos |
+| Video | 128 MB VRAM | 256 MB VRAM |
 
 ---
 
-## ⭐ Support
+## 🧠 Arquitectura del Sistema
 
-If you like this project:
-- ⭐ Star the repository
-- 🔁 Share it
-- 🧠 Give feedback
+```
+SentinelOS ISO
+├── Modo Live
+│   ├── Autologin → admin
+│   ├── Calamares (instalador gráfico)
+│   └── Herramientas ligeras disponibles
+└── Sistema Instalado
+    ├── Pantalla de login (sin autologin)
+    ├── Primer arranque → instala herramientas pesadas
+    │   ├── Metasploit Framework
+    │   ├── Burp Suite Community
+    │   ├── Ghidra
+    │   ├── theHarvester
+    │   └── Volatility3, Shodan CLI
+    └── Sistema completamente funcional
+```
 
 ---
 
-## 🔥 Vision
+## ⚠️ Aviso Legal
 
-SentinelOS is not just another distro.
+SentinelOS está diseñado exclusivamente para **uso educativo y ético**. Todas las herramientas incluidas deben utilizarse únicamente en entornos controlados y con autorización explícita.
 
-It’s a step toward building a **personal cybersecurity ecosystem** — tailored, efficient, and powerful.
+Los desarrolladores no se hacen responsables por el uso indebido o actividades ilegales realizadas con este sistema.
+
+---
+
+## 👨‍💻 Autores
+
+| Nombre | Usuario |
+|---|---|
+| Daniela Álvarez Murillo | `dalvarez` |
+| Jathzael Saavedra Ugalde | `jsaavedra` |
+| Mauricio Trejos Gómez | `mtrejos` |
+| Saulo Jimenez Aguiluz | `sjimenez` |
+
+**Universidad Fidelitas — CY-301 Sistemas Operativos Intermedios — Grupo No. 1 — 2026**
+
+---
+
+## ⭐ Apoyo
+
+Si te gusta este proyecto:
+- ⭐ Dale estrella al repositorio
+- 🔁 Compártelo con la comunidad
+- 🧠 Brinda retroalimentación
