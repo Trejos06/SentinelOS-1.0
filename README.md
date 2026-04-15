@@ -10,6 +10,11 @@ SentinelOS es una distribución Linux orientada a la seguridad, construida sobre
 El sistema incluye un entorno gráfico **GNOME** completamente personalizado, más de **40 herramientas de ciberseguridad** preinstaladas, y un proceso de instalación guiado mediante el instalador gráfico **Calamares**.
 
 ---
+## Descarga
+La ISO de SentinelOS está disponible aquí:
+[https://drive.google.com/file/d/167gyG29YJXyvuhvY4dEV5-_pn6gatE6I/view?usp=sharing]
+
+---
 
 ## 🎯 Propósito
 
