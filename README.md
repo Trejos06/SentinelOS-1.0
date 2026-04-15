@@ -123,16 +123,12 @@ This project is currently personal, but contributions and suggestions are welcom
 
 ---
 
-## 📸 Preview
 
-*(Add screenshots here)*
-
----
 
 ## 👨‍💻 Author
 
-**Mauricio Trejos**  
-Cybersecurity & IAM | Future SOC Analyst  
+**Daniela Álvarez Murillo** | **Jathzael Saavedra Ugalde**
+*Mauricio Trejos Gómez** | **Saulo Jimenez Aguiluz**
 
 ---
 
