@@ -187,12 +187,3 @@ Los desarrolladores no se hacen responsables por el uso indebido o actividades i
 | Saulo Jimenez Aguiluz | `sjimenez` |
 
 **Universidad Fidelitas — CY-301 Sistemas Operativos Intermedios — Grupo No. 1 — 2026**
-
----
-
-## ⭐ Apoyo
-
-Si te gusta este proyecto:
-- ⭐ Dale estrella al repositorio
-- 🔁 Compártelo con la comunidad
-- 🧠 Brinda retroalimentación
